@@ -2,17 +2,21 @@
 
 ## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
 
-#### _This is a template using webpack for React, 04/15/19_
+#### _This is a Weather Underground clone created using React, 04/19/19_
 
 #### By _**Dino Nguyen**_
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling._
+
+## Component Tree
+
+![alt text](src/assets/images/comp-tree.jpg)
 
 ## Setup/Installation Requirements
 
-* _Run `git clone https://github.com/Lilkgb/react-template` in your terminal of choice_
+* _Run `git clone https://github.com/dinowins/weather-underground-react` in your terminal of choice_
 * _Navigate to where you put the folder inside your terminal and run `npm install`_
 * _After the install is complete you can run `npm run start` to see a live version of the website._
 
