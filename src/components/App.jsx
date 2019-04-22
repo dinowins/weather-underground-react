@@ -1,6 +1,7 @@
 import React from 'react';
 import ArticleList from './ArticleList';
 import Header from './Header';
+import Join from './Join';
 import WeatherMast from './WeatherMast';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ function App(){
       <WeatherMast/>
       <Switch>
         <Route exact path='/' component={ArticleList} />
+        <Route exact path='/join' component={Join} />
         <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>
