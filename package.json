@@ -1,5 +1,5 @@
 {
-  "name": "Weather Underground React",
+  "name": "weather-underground-react",
   "version": "1.0.0",
   "description": "Clone of Weather Underground using React",
   "main": "index.jsx",

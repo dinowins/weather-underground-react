@@ -18,6 +18,14 @@ _This is a clone of the Weather Underground website created with React._
 
 - I am implementing the Dark Sky API into my app. I assume it is a similar process to what we've learned.
 
+## Similarities and Differences between Clone and Actual
+
+Similarities:
+- component structure for home page is similar
+
+Differences:
+- No ads
+
 ## Setup/Installation Requirements
 
 * _Run `git clone https://github.com/dinowins/weather-underground-react` in your terminal of choice_
