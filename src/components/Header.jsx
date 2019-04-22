@@ -5,7 +5,7 @@ import '../scss/styles.scss';
 function Header(){
   return (
     <div>
-      <h1 className='bg-grn header'>Help Queue!</h1>
+      <h1 className='bg-grn header'>Weather Underground</h1>
       <Link to="/">Home</Link>
     </div>
   );
