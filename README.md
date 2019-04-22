@@ -1,12 +1,10 @@
 # _Weather Underground React Clone_
 
-#### _This is a Weather Underground clone created using React, 04/19/19_
-
 #### By _**Dino Nguyen**_
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling._
+_This is a clone of the Weather Underground website created with React._
 
 ## Component Tree
 
