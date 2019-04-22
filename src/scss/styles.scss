@@ -1,6 +1,10 @@
 @import 'backgrounds.scss';
 @import 'hovers.scss';
 
+body {
+  background-color: #1e2023;
+}
+
 //HEADER styles start
 
 .header {
@@ -44,6 +48,20 @@
 }
 
 //HEADER styles end
+
+//WEATHEMAST styles start
+
+.favorites-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #1e2023;
+  color: white;
+  justify-content: space-around;
+  border-top: 1px solid dimgray;
+  border-bottom: 1px solid dimgray;
+}
+
+//WEATHEMAST styles end
 
 // SIGNUPHERO styles start
 
