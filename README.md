@@ -6,9 +6,17 @@
 
 _This is a clone of the Weather Underground website created with React._
 
+-The differences with Angular and React include:
+-  no dependency injection and using JSX instead of templates for React
+- CSS encapsulation for Angular
+
 ## Component Tree
 
 ![alt text](src/assets/images/comp-tree.jpg)
+
+## Development Notes and Questions
+
+- I am implementing the Dark Sky API into my app. I assume it is a similar process to what we've learned.
 
 ## Setup/Installation Requirements
 
@@ -24,7 +32,7 @@ _If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' bu
 
 ## Support and contact details
 
-_Please contact Ryan McLean at rmcleandev@gmail.com_
+_Please contact Dino Nguyen at dinodnguyen@gmail.com_
 
 ## Technologies Used
 
@@ -38,4 +46,4 @@ _AOS_
 
 *This Software is Licensed under the MIT License.*
 
-Copyright (c) 2019 **_Ryan McLean_**
+Copyright (c) 2019 **_Dino Nguyen_**
