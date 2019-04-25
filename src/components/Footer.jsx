@@ -28,7 +28,7 @@ function Footer() {
         </div>
       </div>
       <a id='cloudPower' href='https://www.ibm.com/cloud/'>Powered by the IBM Cloud</a>
-      <img src={FooterLogos}></img>
+      <img id="footer-logos" src={FooterLogos}></img>
       <p id='copyright'>© Copyright TWC Product and Technology LLC 2014, 2019</p>
     </div>
 
