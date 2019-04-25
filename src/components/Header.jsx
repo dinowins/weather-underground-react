@@ -14,7 +14,7 @@ function Header(){
       <p id='mobile'>Mobile Apps</p>
       <p id='more'>More</p>
       <input type='text' class='location-bar' placeholder='Search Locations'/>
-      <p className='membership'>Log In</p>
+      <Link to="/login"><p className='membership'>Log In</p></Link>
       <Link to="/join"><p className='membership'>Join</p></Link>
     </div>
   );

@@ -3,7 +3,7 @@ import '../scss/styles.scss';
 
 function Join() {
   return(
-    <div className="loginDetails">
+    <div className="joinDetails">
       <h1>Join Weather Underground</h1>
       <ul>
         <li>Choose real-time alerts for your city.</li>
