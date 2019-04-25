@@ -29,6 +29,34 @@ body {
   vertical-align: center;
 }
 
+.links {
+  cursor: pointer;
+}
+
+#sensor:hover {
+  border-top: 6px solid red;
+}
+
+#maps:hover {
+  border-top: 6px solid orange;
+}
+
+#severe:hover {
+  border-top: 6px solid yellow;
+}
+
+#news:hover {
+  border-top: 6px solid green;
+}
+
+#mobile:hover {
+  border-top: 6px solid lightblue;
+}
+
+#more:hover {
+  border-top: 6px solid blue;
+}
+
 #sensor {
   border-left: 1px solid white;
   a {
