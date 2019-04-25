@@ -9,7 +9,10 @@ function Article(props){
     transition: '.3s linear',
     margin: '10px 0px',
     padding: '0px 10px',
-    borderBottom: '1px solid grey'
+    borderBottom: '1px solid grey',
+    width: '60%',
+    marginRight: 'auto',
+    marginLeft: 'auto'
   };
   return (
     <div style = {ticketStyles} className='hover-shadow' data-aos='fade-in'>
