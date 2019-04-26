@@ -3,40 +3,53 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   let ticketStyles = {
+    display: 'flex',
     backgroundColor: '#1e2023',
     fontFamily: 'sans-serif',
     paddingTop: '25x',
     transition: '.3s linear',
     margin: '10px 0px',
     padding: '0px 10px',
-    borderBottom: '1px solid grey',
     width: '60%',
     marginRight: 'auto',
-    marginLeft: 'auto'
+    marginLeft: 'auto',
+    marginTop: '50px'
   };
   return (
     <div style = {ticketStyles}>
-      <h2 className="article-title"><a href="#">{props.title}</a></h2>
-      <style jsx>{`
-        .article-title {
-          color: #8ED1E9;
-        }
-        a:visited {
-          text-decoration: none;
-          color: #8ED1E9;
-        }
-        a:hover {
-          color: #8ED1E9;
-        }
-        a:focus {
-          text-decoration: none;
-          color: #8ED1E9;
-        }
-        .article-description {
-          color: #FFF;
-        }
+    <style jsx>{`
+      img {
+        max-width: 250px;
+        max-height: 175px;
+        min-width: 250px;
+        min-height: 175px;
+      }
+      .article-title {
+        color: #8ED1E9;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #8ED1E9;
+      }
+      a:hover {
+        color: #8ED1E9;
+      }
+      a:focus {
+        text-decoration: none;
+        color: #8ED1E9;
+      }
+      .article-description {
+        color: #FFF;
+      }
+      .wordBox {
+        margin-left: 40px;
+      }
       `}</style>
-      <p className="article-description">{props.description}</p>
+      <img src={require(`../assets/images/${props.photo}.jpg`)} alt="article"/>
+      <div className="wordBox">
+        <h2 className="article-title"><a href="#">{props.title}</a></h2>
+        <p className="article-description">{props.description}</p>
+      </div>
     </div>
   );
 }
@@ -44,7 +57,8 @@ function Article(props){
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  link: PropTypes.string
+  link: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired
 };
 
 export default Article;
