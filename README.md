@@ -12,7 +12,7 @@ _This is a clone of the Weather Underground website created with React._
 
 ## Component Tree
 
-![alt text](src/assets/images/comp-tree.jpg)
+![alt text](src/assets/images/componentTreev2.png)
 
 ## Development Notes and Questions
 

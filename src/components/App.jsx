@@ -48,7 +48,6 @@ class App extends React.Component {
     return (
       <div>
       <Header/>
-      <button onClick={this.changeTemp}>Change temp</button>
       <WeatherMast NewCities = {this.state.cityList}/>
       <Switch>
       <Route exact path='/' component={ArticleList} />
@@ -64,3 +63,6 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+// <button onClick={this.changeTemp}>Change temp</button>
