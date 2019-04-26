@@ -31,7 +31,7 @@ function Article(props){
         text-decoration: none;
         color: #8ED1E9;
       }
-      a:hover {
+      a:hover, a {
         color: #8ED1E9;
       }
       a:focus {
@@ -47,7 +47,7 @@ function Article(props){
       `}</style>
       <img src={require(`../assets/images/${props.photo}.jpg`)} alt="article"/>
       <div className="wordBox">
-        <h2 className="article-title"><a href="#">{props.title}</a></h2>
+        <h2 className="article-title"><a href={props.link}>{props.title}</a></h2>
         <p className="article-description">{props.description}</p>
       </div>
     </div>

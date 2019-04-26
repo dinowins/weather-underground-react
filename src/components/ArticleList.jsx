@@ -11,6 +11,7 @@ function ArticleList(){
         <Article title={article.title}
           description={article.description}
           photo={article.photo}
+          link={article.link}
           key={index}/>
       )}
     </div>
