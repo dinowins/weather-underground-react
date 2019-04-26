@@ -20,6 +20,14 @@ _This is a clone of the Weather Underground website created with React._
 
 ## Similarities and Differences between Clone and Actual
 
+Actual Website:
+
+![alt text](src/assets/images/actual.png)
+
+Cloned Website:
+
+![alt text](src/assets/images/clone.png)
+
 Similarities:
 - component structure for home page is similar
 
