@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   let ticketStyles = {
-    backgroundColor: '#eee',
+    backgroundColor: '#1e2023',
     fontFamily: 'sans-serif',
     paddingTop: '25x',
     transition: '.3s linear',
@@ -15,9 +15,28 @@ function Article(props){
     marginLeft: 'auto'
   };
   return (
-    <div style = {ticketStyles} className='hover-shadow' data-aos='fade-in'>
-      <h3>{props.title}</h3>
-      <p><em>{props.description}</em></p>
+    <div style = {ticketStyles}>
+      <h2 className="article-title"><a href="#">{props.title}</a></h2>
+      <style jsx>{`
+        .article-title {
+          color: #8ED1E9;
+        }
+        a:visited {
+          text-decoration: none;
+          color: #8ED1E9;
+        }
+        a:hover {
+          color: #8ED1E9;
+        }
+        a:focus {
+          text-decoration: none;
+          color: #8ED1E9;
+        }
+        .article-description {
+          color: #FFF;
+        }
+      `}</style>
+      <p className="article-description">{props.description}</p>
     </div>
   );
 }
