@@ -15,12 +15,24 @@ class App extends React.Component {
     this.state = {
       cityList: {
         SF: {
-          name: "San Francisco",
+          name: "San Francisco, CA",
           temp: 70
         },
         ATL: {
-          name: "Atlanta",
+          name: "Atlanta, GA",
           temp: 84
+        },
+        NYC: {
+          name: "Manhattan, NY",
+          temp: 75
+        },
+        CHI: {
+          name: "Chicago, IL",
+          temp: 59
+        },
+        BOS: {
+          name: "Boston, MA",
+          temp: 63
         }
       }
     }
