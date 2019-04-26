@@ -86,6 +86,17 @@ body {
   border-bottom: 1px solid dimgray;
 }
 
+.city-link a {
+  color: #15AADC;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.city-link a:hover {
+  background-color: lightgray;
+  text-decoration: none;
+}
+
 //WEATHEMAST styles end
 
 // SIGNUPHERO styles start
