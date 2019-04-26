@@ -13,7 +13,7 @@ function Header(){
       <p className='links' id='news'>News & Blogs</p>
       <p className='links' id='mobile'>Mobile Apps</p>
       <p className='links' id='more'>More</p>
-      <input type='text' class='location-bar' placeholder='Search Locations'/>
+      <input className="searchBar" type='text' class='location-bar' placeholder='Search Locations'/>
       <Link to="/login"><p className='membership'>Log In</p></Link>
       <Link to="/join"><p className='membership'>Join</p></Link>
     </div>

@@ -16,6 +16,19 @@ body {
   }
 }
 
+.searchBar {
+    margin-top: 8px;
+    display: block;
+    font-size: 16px;
+    vertical-align: middle;
+    -moz-box-sizing: border-box;
+    color: #1088b0;
+    background: #e7e7e7;
+    border: 2px solid #8ed1e9;
+    padding: 8px 36px 4px 6px;
+    box-shadow: none;
+}
+
 .location-bar {
   border-radius: 5px;
   margin: 8px 0px 0px;
