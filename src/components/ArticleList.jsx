@@ -7,10 +7,10 @@ function ArticleList(){
   return (
     <div>
       <SignUpHero/>
-      <hr/>
       {masterArticleList.map((article, index) =>
         <Article title={article.title}
           description={article.description}
+          photo={article.photo}
           key={index}/>
       )}
     </div>
