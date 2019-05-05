@@ -10,40 +10,6 @@ import Error404 from './Error404';
 
 class App extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      cityList: {
-        SF: {
-          name: "San Francisco, CA",
-          temp: 70
-        },
-        ATL: {
-          name: "Atlanta, GA",
-          temp: 84
-        },
-        NYC: {
-          name: "Manhattan, NY",
-          temp: 75
-        },
-        CHI: {
-          name: "Chicago, IL",
-          temp: 59
-        },
-        BOS: {
-          name: "Boston, MA",
-          temp: 63
-        }
-      }
-    }
-    this.changeTemp = this.changeTemp.bind(this);
-  }
-
-
-  changeTemp() {
-      console.log(this.state.cityList);
-  }
-
   render(){
     return (
       <div>
