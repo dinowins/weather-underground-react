@@ -2,7 +2,7 @@ import React from 'react';
 import Article from './Article';
 import SignUpHero from './SignUpHero';
 import Conditions from './Conditions';
-import masterArticleList from '../models/articleData.js'
+import masterArticleList from '../models/articleData.js';
 
 function ArticleList(){
   return (

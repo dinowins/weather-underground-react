@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div>
       <Header/>
-      <WeatherMast NewCities = {this.state.cityList}/>
+      <WeatherMast />
       <Switch>
       <Route exact path='/' component={ArticleList} />
       <Route exact path='/join' component={Join} />
