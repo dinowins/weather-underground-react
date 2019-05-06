@@ -39,11 +39,12 @@ class ArticleList extends React.Component{
           link: 'http://bit.ly/2HdLSBj?cm_ven=hp-slot-5',
           photo: 'sun'
         }
-      ];
-      addArticle: false; 
+      ],
+      addArticle: false
     }
     this.handleEditArticle = this.handleEditArticle.bind(this);
     this.handleAddArticle = this.handleAddArticle.bind(this);
+    this.toggleAdd = this.toggleAdd.bind(this);
   }
 
   handleEditArticle(index, newArticle) {
@@ -76,20 +77,32 @@ class ArticleList extends React.Component{
     } else {
       AddComponent = <button onClick={this.toggleAdd} style={ButtonStyle}>Add Article</button>;
     }
-    return (
-      <div>
-        <Conditions/>
-        <SignUpHero/>
-        {masterArticleList.map((article, index) =>
+    if (this.props.canEdit) {
+      Visible = <div>
+        {this.state.masterArticleList.map((article, index) =>
           <Article title={article.title}
             description={article.description}
             photo={article.photo}
             link={article.link}
-            key={index}/>
-        )}
+            index={index}
+            editEnabled={this.props.editEnabled}
+            onEditArticle={this.handleEditArticle}
+            key={index}/>)}{AddComponent}
+      </div>;
+    }
+    return (
+      <div>
+        <Conditions/>
+        <SignUpHero/>
+        {Visible}
       </div>
     );
   }
+}
+
+ArticleList.propTypes = {
+  editEnabled: PropTypes.bool.isRequired,
+  canEdit: PropTypes.bool.isRequired
 }
 
 export default ArticleList;

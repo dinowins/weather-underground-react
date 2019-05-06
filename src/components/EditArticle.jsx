@@ -29,7 +29,7 @@ function EditArticle(props) {
 }
 
 EditArticle.propTypes = {
-  onEditKeg: PropTypes.func.isRequired,
+  onEditArticle: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
