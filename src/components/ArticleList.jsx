@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './Article';
+import PropTypes from 'prop-types';
 import SignUpHero from './SignUpHero';
 import Conditions from './Conditions';
 import AddArticle from './AddArticle';
@@ -49,7 +50,7 @@ class ArticleList extends React.Component{
   }
 
   handleEditArticle(index, newArticle) {
-    const newState = {...this.state}.masterArticleList;
+    const newState = Object.assign({}, this.state.masterArticleList);
     for (let key in newArticle) {
       if (newArticle[key]) {
         newState[index][key] = newArticle[key];
@@ -59,13 +60,13 @@ class ArticleList extends React.Component{
   }
 
   toggleAdd() {
-    const newState = {...this.state};
+    const newState = Object.assign({}, this.state);
     newState.addArticle = !newState.addArticle;
     this.setState({addArticle: newState});
   }
 
   handleAddArticle(newArticle) {
-    const newState = {...this.state}.kegList;
+    const newState = Object.assign({}, this.state.masterArticleList);
     newState.push(newArticle);
     this.setState({masterArticleList: newState});
   }
@@ -76,7 +77,7 @@ class ArticleList extends React.Component{
     if (this.state.addArticle) {
       AddComponent= <AddArticle toggleAdd={this.toggleAdd} onAddArticle={this.handleAddArticle} />;
     } else {
-      AddComponent = <button onClick={this.toggleAdd} style={ButtonStyle}>Add Article</button>;
+      AddComponent = <button onClick={this.toggleAdd}>Add Article</button>;
     }
     if (this.props.canEdit) {
       Visible = <div>

@@ -13,15 +13,15 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      editEnabled: false,
-      canEdit: false
+      editEnabled: true,
+      canEdit: true
     };
     this.handleCanEdit = this.handleCanEdit.bind(this);
   }
 
   handleCanEdit() {
     if(location.hash =='/') {
-      const newState = {...this.state};
+      const newState = Object.assign({}, this.state);
       newState.editEnabled = !this.state.editEnabled;
       this.setState({canEdit: newState.canEdit});
     }
