@@ -4,9 +4,11 @@ import Header from './Header';
 import Join from './Join';
 import Login from './Login';
 import WeatherMast from './WeatherMast';
+import NewTicketControl from './NewCityControl';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
+import NewCityControl from './NewCityControl';
 
 class App extends React.Component {
 
@@ -19,6 +21,7 @@ class App extends React.Component {
       <Route exact path='/' component={ArticleList} />
       <Route exact path='/join' component={Join} />
       <Route exact path ='/login' component={Login} />
+      <Route exact oath ='/newcity' component={NewCityControl} />
       <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>
