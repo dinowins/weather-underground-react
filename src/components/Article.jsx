@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EditArticle from './EditArticle';
 
 function Article(props){
   let ticketStyles = {
