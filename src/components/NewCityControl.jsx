@@ -1,4 +1,6 @@
 import React from 'react';
+import NewCityForm from './NewCityForm';
+import EditCity from './EditCity';
 
 export default class NewCityControl extends React.Component {
 
@@ -7,19 +9,30 @@ export default class NewCityControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleNewCitySubmission = this.handleNewCitySubmission.bind(this);
+    this.handleEditCity = this.handleEditCity.bind(this);
   }
 
-  handleClick(){
+  handleNewCitySubmission(){
     this.setState({formVisibleOnPage: true});
-    console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
+  }
+
+  handleEditCity(){
+    this.setState({formVisibleOnPage: false});
   }
   
   render() {
+    let currentVisibleContent = null;
+    if (this.state.formVisibleOnPage) {
+      currentVisibleContent = <NewCityForm />
+    } else {
+      currentVisibleContent = <EditCity />
+    }
     return (
-     <div>
-       <p>This is the NewCityControl component!</p>
-       <strong onClick={this.handleClick}>Click me to change my state!</strong>
+      <div>
+      <p onClick={this.handleNewCitySubmission}>Click me to add a city</p>
+      <p onClick={this.handleEditCity}>Click me to edit a city</p>
+       {currentVisibleContent}
      </div>
     );
   }
