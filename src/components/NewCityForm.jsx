@@ -8,9 +8,9 @@ function NewCityForm(){
 
   function handleNewCityFormSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_temp.value);
-    console.log(_link.value);
+    // console.log(_name.value);
+    // console.log(_temp.value);
+    // console.log(_link.value);
     _name.value = '';
     _temp.value = '';
     _link.value = '';

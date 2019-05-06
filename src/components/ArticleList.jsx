@@ -50,7 +50,7 @@ class ArticleList extends React.Component{
   }
 
   handleEditArticle(index, newArticle) {
-    const newState = Object.assign({}, this.state.masterArticleList);
+    const newState = {...this.state}.masterArticleList;
     for (let key in newArticle) {
       if (newArticle[key]) {
         newState[index][key] = newArticle[key];
@@ -60,13 +60,13 @@ class ArticleList extends React.Component{
   }
 
   toggleAdd() {
-    const newState = Object.assign({}, this.state);
+    const newState = {...this.state};
     newState.addArticle = !newState.addArticle;
     this.setState({addArticle: newState});
   }
 
   handleAddArticle(newArticle) {
-    const newState = Object.assign({}, this.state.masterArticleList);
+    const newState = {...this.state}.masterArticleList;
     newState.push(newArticle);
     this.setState({masterArticleList: newState});
   }
