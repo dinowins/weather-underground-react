@@ -2,7 +2,7 @@ import React from 'react';
 import NewCityForm from './NewCityForm';
 import EditCity from './EditCity';
 
-export default class NewCityControl extends React.Component {
+export default class CityControl extends React.Component {
 
   constructor(props) {
     super(props);
