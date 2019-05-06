@@ -6,7 +6,7 @@ export default class EditCity extends React.Component {
       <div>
         <p>Edit City component is here.</p>
       </div>
-    )
+    );
   }
 }
 

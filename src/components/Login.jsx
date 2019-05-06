@@ -9,7 +9,7 @@ function Login() {
       <p>Password:</p>
       <h2>Sign in</h2>
     </div>
-  )
+  );
 }
 
 export default Login;

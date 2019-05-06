@@ -24,17 +24,17 @@ function NewCityForm(){
           id="name"
           placeholder="city name"
           ref={(input) => {_name = input;}}/>
-          <input 
+        <input 
           type="number"
           id="temp"
           placeholder="city temperature"
           ref={(input) => {_temp = input;}}/>
-          <input 
+        <input 
           type="text"
           id="link"
           placeholder="city weather link"
           ref={(input) => {_link = input;}}/>
-          <button type='submit'>Submit city info</button>
+        <button type='submit'>Submit city info</button>
       </form>
     </div>
   );

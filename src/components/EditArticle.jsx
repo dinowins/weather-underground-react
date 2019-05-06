@@ -25,7 +25,7 @@ function EditArticle(props) {
       <input placeholder={props.photo} ref={(input) => { _photo = input; }} />
       <button type='submit'>Submit</button>
     </form>
-  )
+  );
 }
 
 EditArticle.propTypes = {

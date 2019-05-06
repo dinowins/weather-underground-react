@@ -2,6 +2,7 @@ import React from 'react';
 import Article from './Article';
 import SignUpHero from './SignUpHero';
 import Conditions from './Conditions';
+import AddArticle from './AddArticle';
 
 class ArticleList extends React.Component{
 
@@ -41,7 +42,7 @@ class ArticleList extends React.Component{
         }
       ],
       addArticle: false
-    }
+    };
     this.handleEditArticle = this.handleEditArticle.bind(this);
     this.handleAddArticle = this.handleAddArticle.bind(this);
     this.toggleAdd = this.toggleAdd.bind(this);
@@ -65,8 +66,8 @@ class ArticleList extends React.Component{
 
   handleAddArticle(newArticle) {
     const newState = {...this.state}.kegList;
-    newState.push(newArticle;
-      this.setState({masterArticleList: newState});
+    newState.push(newArticle);
+    this.setState({masterArticleList: newState});
   }
 
   render(){
@@ -103,6 +104,6 @@ class ArticleList extends React.Component{
 ArticleList.propTypes = {
   editEnabled: PropTypes.bool.isRequired,
   canEdit: PropTypes.bool.isRequired
-}
+};
 
 export default ArticleList;

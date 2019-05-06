@@ -24,16 +24,16 @@ export default class CityControl extends React.Component {
   render() {
     let currentVisibleContent = null;
     if (this.state.formVisibleOnPage) {
-      currentVisibleContent = <NewCityForm />
+      currentVisibleContent = <NewCityForm />;
     } else {
-      currentVisibleContent = <EditCity />
+      currentVisibleContent = <EditCity />;
     }
     return (
       <div>
-      <p onClick={this.handleNewCitySubmission}>Click me to add a city</p>
-      <p onClick={this.handleEditCity}>Click me to edit a city</p>
-       {currentVisibleContent}
-     </div>
+        <p onClick={this.handleNewCitySubmission}>Click me to add a city</p>
+        <p onClick={this.handleEditCity}>Click me to edit a city</p>
+        {currentVisibleContent}
+      </div>
     );
   }
 }
