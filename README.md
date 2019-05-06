@@ -46,6 +46,8 @@ Differences:
 
 _If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' but found 'CRLF'`. It doesn't break the code and will still run correctly when you run `npm run start`_
 
+_There is a bug with adding or editing an article where you must download a JPG photo and give it a keyword. Use that keyword when adding or editing an article._ 
+
 ## Support and contact details
 
 _Please contact Dino Nguyen at dinodnguyen@gmail.com_
